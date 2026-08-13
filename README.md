@@ -32,7 +32,7 @@ A complete, hands-on build of a highly available 2-tier web architecture on AWS 
 
 ## Architecture Overview
 
-![Architecture Diagram]((https://github.com/jesswinanto1/aws-2tier-architecture/blob/main/aws-2tier-architecture-diagram.png)
+Architecture Diagram:https://github.com/jesswinanto1/aws-2tier-architecture/blob/main/aws-2tier-architecture-diagram.png
 
 | Component | Purpose | Placement |
 |---|---|---|
