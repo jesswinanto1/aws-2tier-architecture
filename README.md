@@ -8,7 +8,7 @@ A complete, hands-on build of a highly available 2-tier web architecture on AWS 
 
 ## Table of Contents
 
-1. [Architecture Overview]((https://github.com/jesswinanto1/aws-2tier-architecture/blob/main/aws-2tier-architecture-diagram.png)
+1. [Architecture Overview](#Architecture Overview)
 2. [Prerequisites](#prerequisites)
 3. [Cost Notes](#cost-notes)
 4. [Step 1 — Create the VPC](#step-1--create-the-vpc)
@@ -32,7 +32,7 @@ A complete, hands-on build of a highly available 2-tier web architecture on AWS 
 
 ## Architecture Overview
 
-![Architecture Diagram](architecture-diagram.png)
+![Architecture Diagram]((https://github.com/jesswinanto1/aws-2tier-architecture/blob/main/aws-2tier-architecture-diagram.png)
 
 | Component | Purpose | Placement |
 |---|---|---|
