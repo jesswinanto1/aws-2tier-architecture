@@ -24,9 +24,8 @@ A complete, hands-on build of a highly available 2-tier web architecture on AWS 
 14. [Step 11 — Connecting to Private-Subnet EC2 Instances](#step-11--connecting-to-private-subnet-ec2-instances)
 15. [Step 12 — End-to-End Testing](#step-12--end-to-end-testing)
 16. [Cleanup](#cleanup)
-17. [Troubleshooting Log](#troubleshooting-log)
-18. [Files in this Repo](#files-in-this-repo)
-19. [Architecture-to-Console Mapping](#architecture-to-console-mapping)
+17. [Files in this Repo](#files-in-this-repo)
+18. [Architecture-to-Console Mapping](#architecture-to-console-mapping)
 
 ---
 
