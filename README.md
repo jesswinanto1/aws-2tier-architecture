@@ -452,22 +452,6 @@ Delete resources in this order to avoid dependency errors and stop ongoing charg
 8. **SNS topic** (`twotier-alerts`).
 9. **VPC** (`twotier-vpc`) — delete last; this cleans up subnets, route tables, and the Internet Gateway automatically since the wizard created them together.
 
----
-
-## Troubleshooting Log
-
-Issues actually encountered during this build, and their fixes:
-
-| Symptom | Cause | Fix |
-|---|---|---|
-| CloudFront domain shows `AccessDenied` XML error | **Default root object** in CloudFront settings didn't match the actual uploaded S3 filename (e.g. `Jesswinindex.html` vs `index.html`) | Edit the distribution's **General → Settings → Default root object** to exactly match the uploaded file's name, then wait for redeployment |
-| No "Distribution name" field visible in CloudFront wizard | Some console versions omit this optional field entirely | Not an error — continue to the next section (Origin) |
-| CloudFront has no region selector, can't pick Mumbai | CloudFront is a **global** service by design — only the origin (S3 bucket) is regional | Pick the S3 bucket's region during origin selection; CloudFront itself deploys globally regardless |
-| ALB returns `503 Service Unavailable` right after creation | No EC2 instances registered with the target group yet | Expected until the Auto Scaling Group (Step 8) launches and registers healthy instances |
-| Can't SSH into EC2 instance — "Public IPv4 address: -" | Instance is correctly placed in a private subnet with no public IP, by design | Use **EC2 Instance Connect Endpoint** (Step 11) instead of direct SSH |
-| User-data script has no effect on Ubuntu | Script used `yum` (Amazon Linux syntax) on an Ubuntu AMI | Use `apt update -y` / `apt install -y apache2` for Ubuntu instead of `yum install -y httpd` |
-
----
 
 ## Files in this Repo
 
@@ -526,6 +510,3 @@ echo "<h1>Hello from $(hostname -f)</h1>" > /var/www/html/index.html
 
 ---
 
-## License
-
-Add a license of your choice (e.g. MIT) if publishing this repo publicly.
